@@ -11,6 +11,7 @@
         <h1>Ma Bibliothèque</h1>
         <div>
             <a href="ajouter.php">Ajouter un livre</a>
+            <a href='modifier.php?id=<?= $livre['id_livre'] ?>'>Modifier</a> |
             <a href="auteurs/">Gérer les auteurs</a>
         </div>
 
