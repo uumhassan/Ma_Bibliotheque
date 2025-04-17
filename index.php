@@ -10,9 +10,14 @@
     <body>
         <h1>Ma Bibliothèque</h1>
         <div>
+            <!-- Lien vers la page d'ajout -->
             <a href="ajouter.php">Ajouter un livre</a>
-            <a href='modifier.php?id=<?= $livre['id_livre'] ?>'>Modifier</a> |
-            <a href="auteurs/">Gérer les auteurs</a>
+            <!-- Lien vers la page de modification -->
+            <a href='modifier.php?id=<?= $livre['id_livre'] ?>">'>Modifier</a> |
+            <!-- Lien vers la page de suppression-->
+            <a href="supprimer.php?id=<?= $livre['id_livre'] ?>"
+                onclick="return confirm('Êtes-vous sûr de vouloir supprimer ce livre ?')">Supprimer</a>
+            <a href="auteurs/index.php">Gérer les auteurs</a>
         </div>
 
         <table border="1">
